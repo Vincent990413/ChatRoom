@@ -11,8 +11,10 @@
  	<!-- 注册 @Component，@Service，@Reposity到Spring容器，同时扫描 @PostConstruct，@PreDestroy -->
  	<context:component-scan base-package="pers.kanarien.chatroom.common"/>
  	<context:component-scan base-package="pers.kanarien.chatroom.dao"/>
- 	<context:component-scan base-package="pers.kanarien.chatroom.service"/>  
-	
+	<context:component-scan base-package="pers.kanarien.chatroom.service"/>
+
+	<context:annotation-config/>
+
 	<bean id="configProperties"
 		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
 		<property name="locations">
